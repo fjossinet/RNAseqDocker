@@ -12,7 +12,7 @@ Now, get our docker image:
 
     docker pull fjossinet/rnaseq
 
-This image is based on [continuumio/miniconda](https://github.com/ContinuumIO/docker-images/tree/master/miniconda).
+This image is based on [ubuntu](https://hub.docker.com/r/library/ubuntu/).
 
 Usage
 -----

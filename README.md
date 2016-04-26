@@ -1,4 +1,4 @@
-RNAseq2Docker
+RNAseqDocker
 ===============
 
 A docker image supplemented with RNA-Seq/NGS algorithms: Bowtie2, Tophat2 and samtools.

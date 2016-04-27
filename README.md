@@ -1,7 +1,7 @@
 RNAseqDocker
 ===============
 
-A docker image supplemented with RNA-Seq/NGS algorithms: Bowtie2, Tophat2 and SAMtools.
+A docker image providing RNA-Seq/NGS algorithms: Bowtie2, Tophat2 and SAMtools.
 
 Installation and Configuration
 ------------------------------
@@ -19,4 +19,4 @@ Usage
 
 For example, to use the SAMtools algorithm, you should type something like:
 
-docker run -v /Users/fjossinet/my_files:/data fjossinet/rnaseq samtools view -c /data/my_file.bam
+    docker run -v /Users/fjossinet/my_files:/data fjossinet/rnaseq samtools view -c /data/my_file.bam

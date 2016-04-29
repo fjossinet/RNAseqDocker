@@ -1,22 +1,26 @@
 RNAseqDocker
 ===============
 
-A docker image providing RNA-Seq/NGS algorithms: Bowtie2, Tophat2 and SAMtools.
+A docker image containing the following algorithms fully configured:
 
-Installation and Configuration
-------------------------------
+* [SAMtools](http://samtools.sourceforge.net)
+* [Tophat2](https://ccb.jhu.edu/software/tophat/)
+* [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+
+Installation
+------------
 
 First you need to install Docker on your computer. You can find all the details [here](https://docs.docker.com/engine/installation/).
 
-Now, get our docker image:
+Then, to get our docker image, you need to type:
 
     docker pull fjossinet/rnaseq
 
-This image is based on [continuumio/miniconda](https://github.com/ContinuumIO/docker-images/tree/master/miniconda).
+Usages and Examples
+-------------------
 
-Usage
------
+In general, these algorithms need input files. Consequently, you have to mount the file system of your computer (the host) in the Docker container (the guest). This is done with the -v option.
 
-For example, to use the SAMtools algorithm, you should type something like:
+SAMtools algorithm:
 
     docker run -v /Users/fjossinet/my_files:/data fjossinet/rnaseq samtools view -c /data/my_file.bam

@@ -11,8 +11,8 @@ RUN make && make install && make clean
 #tophat2
 WORKDIR /
 RUN apt-get -y install libbz2-dev libboost-all-dev
-RUN wget -qO tophat-2.1.0.tar.gz https://dl.dropboxusercontent.com/u/3753967/algorithms/tophat-2.1.0.tar.gz && tar -xzvf tophat-2.1.0.tar.gz
-WORKDIR tophat-2.1.0
+RUN wget -qO tophat-2.1.1.tar.gz https://ccb.jhu.edu/software/tophat/downloads/tophat-2.1.1.tar.gz && tar -xzvf tophat-2.1.1.tar.gz
+WORKDIR tophat-2.1.1
 RUN ./configure
 RUN make && make install && make clean
 
